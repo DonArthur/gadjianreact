@@ -2,7 +2,7 @@ import React from 'react'
 
 function SideBar() {
     return(
-        <nav className="col-md-2 d-none d-md-block sidebar side-bar">
+        <nav className="col-md-2 d-none d-md-block sidebar side-bar p-0">
             <div className="sidebar-sticky">
                 <ul className="nav flex-column">
                 <li className="nav-item">
