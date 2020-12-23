@@ -1,0 +1,44 @@
+/* --------------------- DESKTOP VIEW --------------------- */
+/* GENERAL */
+.main-color {
+  color: #23c7c8;
+}
+
+/* NAVBAR */
+.navbar-img {
+  height: 70%;
+  width: 70%;
+}
+
+/* LINK */
+.main-link:hover, .active-link {
+  color: #23c7c8;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+}
+
+.main-link {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+}
+
+/* SEARCH BAR */
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* --------------------- MOBILE VIEW --------------------- */
