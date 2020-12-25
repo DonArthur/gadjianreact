@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Search() {
+function Search({input: keyword, onChange: setKeyword}) {
     return (
-        <div className="p-3">
-            <div className="mt-3">
-                <div className="form-group has-search" style={{ width: "180px" }}>
+        <div>
+            <div className="mt-0 ml-md-4">
+                <div className="form-group has-search ml-md-4" style={{ width: "100%" }}>
                     <span className="fa fa-search form-control-feedback main-color"></span>
-                    <input type="text" className="form-control rounded-0" placeholder="Find Personnels" />
+                    <input type="text" value={keyword} onChange={(e) => setKeyword(e.target.value)} className="form-control rounded-0" placeholder="Find Personnels" />
                 </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ import PersonnelList from './views/PersonnelList';
 function App() {
   const apiUrl = "https://randomuser.me/api/?results=28";
   const [personnel, setPersonnel] = useState([])
+  const [isSidebarToggled, setIsSidebarToggled] = useState(false)
 
   useEffect(() => {
       const loadData = () => {
@@ -19,13 +20,16 @@ function App() {
       loadData();
     }, []);
 
+  const toggleSidebar = () => {
+    setIsSidebarToggled(!isSidebarToggled)
+  }
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar toggleSidebar={toggleSidebar} />
       <div className="container-fluid">
         <div className="row">
-          <SideBar />
+          <SideBar sidebarToggled={isSidebarToggled} toggleSidebar={toggleSidebar} />
           <PersonnelList personnels={personnel} />
         </div>
       </div>

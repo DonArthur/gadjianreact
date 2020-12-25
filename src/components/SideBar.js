@@ -1,14 +1,15 @@
 import React from 'react'
 
-function SideBar() {
+function SideBar({ sidebarToggled, toggleSidebar }) {
     return(
-        <nav className="col-md-2 d-none d-md-block sidebar side-bar p-0">
-            <div className="sidebar-sticky">
+        <nav className={ sidebarToggled ? "sidenav" : "col-md-2 d-none d-md-block sidebar side-bar p-0" }>
+            <button type="button" onClick={toggleSidebar} className="btn btn-outline-light rounded-circle ml-auto border-0 hamburger-btn" style={{ float: "right" }}><span className="fa fa-times" style={{ fontSize: "1.5rem", color: "#000" }}></span></button>
+            <div className="sidebar-sticky" style={{ fontSize: ".9em" }}>
                 <ul className="nav flex-column">
                 <li className="nav-item">
                     <button className="nav-link main-link">
-                    <i className="fa fa-home"></i> &nbsp;
-                    Beranda
+                        <i className="fa fa-home"></i> &nbsp;
+                        Beranda
                     </button>
                 </li>
                 <li className="nav-item">
