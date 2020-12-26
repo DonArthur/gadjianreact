@@ -48,7 +48,7 @@ const PersonnelList = ({ personnels }) => {
         <div className="col-sm-12 col-md-10 container-fluid p-0 p-md-2" style={{ backgroundColor: "#f8f8f8" }}>
             <div className="row m-4 pb-4 pb-md-0 align-items-center" style={{ backgroundColor: "#fff" }}>
                 <div className="col-sm-12 col-md-6">
-                    <PageTitle />
+                    <PageTitle title="PERSONNEL LIST" subtitle="List of all personnels" />
                 </div>
                 <div className="col-sm-12 col-md-6 mt-md-3 d-md-flex d-sm-block justify-content-end">
                     <div className="col-sm-12 col-md-6">
